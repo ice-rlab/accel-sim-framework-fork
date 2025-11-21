@@ -1076,3 +1076,48 @@ vllm:
             - args: # defualt is llama-7b model , pass model name to use other models
               accel-sim-mem: 10G
 
+amir-inference:
+    exec_dir: "$ACCELSIM_ROOT/util/accelwattch/accelwattch_benchmarks/validation/"
+    data_dirs: "$ACCELSIM_ROOT/util/accelwattch/accelwattch_benchmarks/validation/"
+    execs:
+        - bert:
+            - args: ""
+              accel-sim-mem: "60G"
+        - gpt2:
+            - args: ""
+              accel-sim-mem: "60G"
+        - bloom:
+            - args: ""
+              accel-sim-mem: "60G"
+        - deit:
+            - args: ""
+              accel-sim-mem: "60G"
+        - gemma:
+            - args: ""
+              accel-sim-mem: "60G"
+        - resnet50:
+            - args: ""
+              accel-sim-mem: "60G"
+
+amir-train:
+    exec_dir: "$ACCELSIM_ROOT/util/accelwattch/accelwattch_benchmarks/validation/"
+    data_dirs: "$ACCELSIM_ROOT/util/accelwattch/accelwattch_benchmarks/validation/"
+    execs:
+        - bert-train:
+            - args: ""
+              accel-sim-mem: "60G"
+        - gpt2-train:
+            - args: ""
+              accel-sim-mem: "60G"
+        - bloom-train:
+            - args: ""
+              accel-sim-mem: "60G"
+        - deit-train:
+            - args: ""
+              accel-sim-mem: "60G"
+        - gemma-train:
+            - args: ""
+              accel-sim-mem: "60G"
+        - resnet50-train:
+            - args: ""
+              accel-sim-mem: "6G"
