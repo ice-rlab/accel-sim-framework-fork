@@ -17,3 +17,4 @@ compile_commands.json
 .cursorrules
 CLAUDE.md
 .venv
+__pycache__
